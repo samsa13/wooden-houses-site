@@ -1,0 +1,26 @@
+/* Custom properties/variables/mixins  */
+
+/*font colors*/
+$--main-grey: #9AA5AA;
+$--main-beige: #F3E9DB;//#EEDEC9;
+$--main-brown: #4A4230;
+$--main-white: #fff;
+$--green: #406D4B;
+$--light-brown: #95816D;
+$--black: #000;
+$--yellow: #F1EEAE;
+
+/*fonts*/
+$--primary-font: FairyMuffinRoundPop, sans-serif;
+$--strong-font: Dubai, sans-serif;    
+
+/*mixins*/
+@mixin button ($background-color, $font-color) {
+  background-color: $background-color;
+  color: $font-color;
+  border-radius: 5rem;
+  border: none;
+  padding: 2rem;
+  
+}
+  

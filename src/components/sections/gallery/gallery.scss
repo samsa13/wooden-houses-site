@@ -1,0 +1,55 @@
+@import '../../../scss-vars/default-variables.scss';
+
+.gallery {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    background-color: $--main-beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 6rem;
+    h1,
+    p {
+        color: $--main-brown;
+    }
+
+    h1 {
+        font-size: 5rem;
+        margin: 10rem 0 -5rem 0;
+    }
+
+    p {
+        font-size: 3rem;
+    }
+
+.box {
+        background-color: $--main-beige;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+        padding-bottom: 10rem;
+        
+
+        .img {
+            width: 85rem;
+            height: 55rem;
+            box-shadow: 8px 6px 6px rgba($--main-brown, 20%);
+        }
+
+        .img:hover {
+            transform: scale3d(1.1, 1.1, 1.1);
+            transition: 1s;
+        }
+    }
+
+
+
+
+
+
+}

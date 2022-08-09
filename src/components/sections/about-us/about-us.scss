@@ -1,0 +1,91 @@
+@import '../../../scss-vars/default-variables.scss';
+
+.about-us {
+    position: relative;
+    width: 100%;
+    height: 110vh;
+    background-color: $--main-beige;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8rem;
+
+    h1 {
+        position: absolute;
+        text-align: center;
+        top: 10rem;
+        color: $--main-brown;
+        font-size: 5rem;
+
+
+    }
+
+    .picture-description {
+        padding-top: 18rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 2rem;
+
+
+        .img {
+            width: 90rem;
+            height: 60rem;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            box-shadow: 8px 6px 6px rgba($--main-brown, 20%);
+        }
+
+        .line {
+            border-bottom: 3px solid $--green;
+            width: 42rem;
+            box-shadow: 8px 6px 6px rgba($--main-brown, 20%);
+        }
+
+        h5,
+        h6 {
+            color: $--main-brown;
+            font-family: $--strong-font;
+        }
+
+        h5 {
+            font-size: 3rem;
+            margin-top: -1rem;
+        }
+
+        h6 {
+            font-size: 2rem;
+          margin-top: -2rem;
+        }
+
+    }
+
+
+    .text-container {
+        margin-top: 18rem;
+        width: 60rem;
+        height: 72rem;
+        background-color: $--main-white;
+        box-shadow: 8px 6px 6px rgba($--main-brown, 20%);
+        border-left: 5px solid #406D4B;
+        padding: 4rem;
+
+
+        p {
+            
+            
+            color: $--main-brown;
+            font-family: $--strong-font;
+            font-size: 2.5rem;
+            text-indent: 2rem;
+            text-align: justify;
+            padding: 1rem;
+            
+        }
+
+    }
+}

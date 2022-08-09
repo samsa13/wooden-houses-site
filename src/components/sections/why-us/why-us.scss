@@ -1,0 +1,50 @@
+@import '../../../scss-vars/default-variables.scss';
+
+.why-us {
+    position: relative;
+    background: url('../../../assets/background-imgs/wood.jpg') rgba($--main-brown, 0.7);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    width: 100%;
+    height: 60vh; //
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+
+    h1,
+    p {
+        color: $--main-white;
+    }
+
+    h1 {
+        font-size: 5rem; 
+        margin-top: -2rem;
+    }
+
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 6rem;
+
+        p {
+            width: 17%;
+            height: 100%;
+            background-color: rgba($--light-brown, 0.8);
+            font: 600 3rem $--strong-font;
+            text-align: center;
+            padding: 5rem 5rem;
+            border-radius: 5rem;
+            line-height: 1.4;
+        }
+    }
+
+
+}
