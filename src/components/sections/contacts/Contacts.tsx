@@ -29,12 +29,12 @@ const contacts = document.getElementById('contacts');
       'KomfDtYUP2-EEeuiW'
     )
       .then((response) => {
-        alert('Ваше сообщение успешно доставлено!')
+        alert('Ваше сообщение успешно доставлено!');
         console.log('SUCCESS!', response.status, response.text);
         contacts?.classList.remove('_sending');
       })
       .catch((err) => {
-        alert('Произошла ошибка!')
+        alert('Произошла ошибка!');
         console.log('FAILED...', err);
         contacts?.classList.remove('_sending');
       });
