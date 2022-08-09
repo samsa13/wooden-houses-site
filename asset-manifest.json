@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/wooden-houses-site/static/css/main.3d4fa020.css",
+    "main.js": "/wooden-houses-site/static/js/main.b893d01a.js",
+    "static/media/wood.jpg": "/wooden-houses-site/static/media/wood.07d05886c0eb46ac61ce.jpg",
+    "static/media/4.jpg": "/wooden-houses-site/static/media/4.f9dae2a0f6eedcb78206.jpg",
+    "static/media/5.jpg": "/wooden-houses-site/static/media/5.c5e70537cf758db858b3.jpg",
+    "static/media/3.jpg": "/wooden-houses-site/static/media/3.63acf6f49f4e71ac4d8a.jpg",
+    "static/media/6.jpg": "/wooden-houses-site/static/media/6.06a944830f01855d81e9.jpg",
+    "static/media/1.jpg": "/wooden-houses-site/static/media/1.8ee20c668d97a9411686.jpg",
+    "static/media/rafters.jpg": "/wooden-houses-site/static/media/rafters.f8f9b8b9f2450be3e728.jpg",
+    "static/media/director-photo.jpg": "/wooden-houses-site/static/media/director-photo.ad3306ff21ffb35ab491.jpg",
+    "static/media/9.jpg": "/wooden-houses-site/static/media/9.08e31110d1a9abf64dc7.jpg",
+    "static/media/main-back-hause.jpg": "/wooden-houses-site/static/media/main-back-hause.2b85063a935341ab0948.jpg",
+    "static/media/7.jpg": "/wooden-houses-site/static/media/7.5aa69d7edbeb5831be50.jpg",
+    "static/media/10.jpg": "/wooden-houses-site/static/media/10.bec90e355d5d1eba2e4d.jpg",
+    "static/media/0.jpg": "/wooden-houses-site/static/media/0.7d09ef051e2828f77f60.jpg",
+    "static/media/8.jpg": "/wooden-houses-site/static/media/8.8b8ceb1865d59589e6cd.jpg",
+    "static/media/12.jpg": "/wooden-houses-site/static/media/12.9664cbc3d88119f9ac74.jpg",
+    "static/media/11.jpg": "/wooden-houses-site/static/media/11.57124a1489fc79a0be06.jpg",
+    "static/media/2.jpg": "/wooden-houses-site/static/media/2.c2be821ef28af1a71240.jpg",
+    "static/media/loading.gif": "/wooden-houses-site/static/media/loading.0a3ed7594f863de914f3.gif",
+    "index.html": "/wooden-houses-site/index.html",
+    "main.3d4fa020.css.map": "/wooden-houses-site/static/css/main.3d4fa020.css.map",
+    "main.b893d01a.js.map": "/wooden-houses-site/static/js/main.b893d01a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3d4fa020.css",
+    "static/js/main.b893d01a.js"
+  ]
+}
