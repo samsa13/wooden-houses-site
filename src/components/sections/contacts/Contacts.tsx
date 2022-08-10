@@ -23,7 +23,7 @@ const contacts = document.getElementById('contacts');
     e.preventDefault();
     contacts?.classList.add('_sending');
     send(
-      'service_t7dp4ul',
+      'service_gk6iyuj',
       'template_0dsus3k',
        toSend,
       'KomfDtYUP2-EEeuiW'
@@ -59,10 +59,10 @@ const contacts = document.getElementById('contacts');
               rel="noreferrer"
             >+7 (909) 277-19-64</a></p>
           <p><a className='mail'
-            href="mailto:woodenhouses76@gmail.com"
+            href="mailto:doma_derevyannye@mail.ru"
             target="_blank"
             rel="noreferrer"
-          >woodenhouses76@gmail.com</a>
+          >doma_derevyannye@mail.ru</a>
           </p>
           <p>
             <a className='vk'
@@ -164,10 +164,10 @@ const contacts = document.getElementById('contacts');
         </div>
         <div>
           <p><a className='mail'
-            href="mailto:woodenhouses76@gmail.com"
+            href="mailto:doma_derevyannye@mail.ru"
             target="_blank"
             rel="noreferrer"
-          >woodenhouses76@gmail.com</a></p>
+          >doma_derevyannye@mail.ru</a></p>
         </div>
         <div>
           <p>Ул. Димитрова <span className='strong_font'>1 - 31</span></p>
