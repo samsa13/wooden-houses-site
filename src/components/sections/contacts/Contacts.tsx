@@ -167,7 +167,8 @@ const contacts = document.getElementById('contacts');
             href="mailto:doma_derevyannye@mail.ru"
             target="_blank"
             rel="noreferrer"
-          >doma_derevyannye@mail.ru</a></p>
+          >doma_derevyannye@mail.ru</a>
+          </p>
         </div>
         <div>
           <p>Ул. Димитрова <span className='strong_font'>1 - 31</span></p>
