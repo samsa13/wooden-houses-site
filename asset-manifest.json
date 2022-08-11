@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/wooden-houses-site/static/css/main.5292a37c.css",
+    "main.css": "/wooden-houses-site/static/css/main.7da90594.css",
     "main.js": "/wooden-houses-site/static/js/main.967765e2.js",
     "static/media/wood.jpg": "/wooden-houses-site/static/media/wood.07d05886c0eb46ac61ce.jpg",
     "static/media/4.jpg": "/wooden-houses-site/static/media/4.f9dae2a0f6eedcb78206.jpg",
@@ -10,6 +10,8 @@
     "static/media/1.jpg": "/wooden-houses-site/static/media/1.8ee20c668d97a9411686.jpg",
     "static/media/rafters.jpg": "/wooden-houses-site/static/media/rafters.f8f9b8b9f2450be3e728.jpg",
     "static/media/director-photo.jpg": "/wooden-houses-site/static/media/director-photo.ad3306ff21ffb35ab491.jpg",
+    "static/media/Fairymuffinroundpop.eot": "/wooden-houses-site/static/media/Fairymuffinroundpop.b25271e7fa0d81e71527.eot",
+    "static/media/Fairymuffinroundpop.ttf": "/wooden-houses-site/static/media/Fairymuffinroundpop.2cffe17bb561b2ecbd15.ttf",
     "static/media/9.jpg": "/wooden-houses-site/static/media/9.08e31110d1a9abf64dc7.jpg",
     "static/media/main-back-hause.jpg": "/wooden-houses-site/static/media/main-back-hause.2b85063a935341ab0948.jpg",
     "static/media/7.jpg": "/wooden-houses-site/static/media/7.5aa69d7edbeb5831be50.jpg",
@@ -19,13 +21,15 @@
     "static/media/12.jpg": "/wooden-houses-site/static/media/12.9664cbc3d88119f9ac74.jpg",
     "static/media/11.jpg": "/wooden-houses-site/static/media/11.57124a1489fc79a0be06.jpg",
     "static/media/2.jpg": "/wooden-houses-site/static/media/2.c2be821ef28af1a71240.jpg",
+    "static/media/Dubai-Regular.eot": "/wooden-houses-site/static/media/Dubai-Regular.90153397060ca3a114de.eot",
+    "static/media/Dubai-Regular.ttf": "/wooden-houses-site/static/media/Dubai-Regular.8455b3cdc22765532fb6.ttf",
     "static/media/loading.gif": "/wooden-houses-site/static/media/loading.0a3ed7594f863de914f3.gif",
     "index.html": "/wooden-houses-site/index.html",
-    "main.5292a37c.css.map": "/wooden-houses-site/static/css/main.5292a37c.css.map",
+    "main.7da90594.css.map": "/wooden-houses-site/static/css/main.7da90594.css.map",
     "main.967765e2.js.map": "/wooden-houses-site/static/js/main.967765e2.js.map"
   },
   "entrypoints": [
-    "static/css/main.5292a37c.css",
+    "static/css/main.7da90594.css",
     "static/js/main.967765e2.js"
   ]
 }
