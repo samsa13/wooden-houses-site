@@ -8,7 +8,6 @@ import { Breakpoint } from 'react-socks';
 
 const NavBar: FC = () => {
 
-
     useEffect(navScroll, []);
 
     return (

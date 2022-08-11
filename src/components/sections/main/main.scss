@@ -109,7 +109,7 @@
 
 @media screen and (max-width: 576px) {
     .main {
-        background: url('../../../assets/background-imgs/main-back-hause.jpg') rgba($--black, 0.6);
+        background: url('../../../assets/background-imgs/main-back-hause.jpg') rgba($--black, 0.4);
         background-position: right 70% bottom 0%;
         background-repeat: no-repeat;
         background-size: cover;
@@ -171,7 +171,7 @@
 
             .button:hover {
                 transition: background-color 1s;
-                background-color: rgba($--main-grey, 50%);
+                background-color: rgba($--main-grey, 60%);
                 color: $--main-white;
             }
         }

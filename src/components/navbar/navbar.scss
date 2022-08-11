@@ -144,7 +144,7 @@
     left: 0;
     width: 100vw;
     z-index: 3;
-    background-color: rgba($--main-white, 0);
+    background-color: $--main-beige;
    
 
     .logo {
@@ -155,8 +155,8 @@
       gap: .5rem;
       padding: .5rem;
       transition: 1s;
-      color:$--main-grey;
-      box-shadow: 0 2px 0 $--main-grey;
+      color: $--main-brown;
+      box-shadow: 0 4px 4px rgba($--main-brown, 0.3);
       h4 {
         font-size: 2.2rem;
       }
@@ -169,7 +169,7 @@
         transition: 1s;
         width: 3.5rem;
         height: 3.5rem;
-        fill: $--main-grey;
+        fill: $--main-brown;
       }
 
       .menu{

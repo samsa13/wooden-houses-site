@@ -1,5 +1,17 @@
 /* Custom properties/variables/mixins  */
 
+@font-face {
+  font-family: FairyMuffinRoundPop; /* Гарнитура шрифта */
+  src: url(../assets/fonts/Fairymuffinroundpop.eot);
+  src: local(FairyMuffinRoundPop), url(../assets/fonts/Fairymuffinroundpop.ttf);
+ };
+
+@font-face {
+  font-family: Dubai; /* Гарнитура шрифта */
+  src: url(../assets/fonts/Dubai-Regular.eot);
+  src: local(Dubai), url(../assets/fonts/Dubai-Regular.ttf);
+ };
+
 /*font colors*/
 $--main-grey: #9AA5AA;
 $--main-beige: #F3E9DB;//#EEDEC9;
