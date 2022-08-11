@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/wooden-houses-site/static/css/main.3d4fa020.css",
-    "main.js": "/wooden-houses-site/static/js/main.bad52114.js",
+    "main.css": "/wooden-houses-site/static/css/main.5292a37c.css",
+    "main.js": "/wooden-houses-site/static/js/main.967765e2.js",
     "static/media/wood.jpg": "/wooden-houses-site/static/media/wood.07d05886c0eb46ac61ce.jpg",
     "static/media/4.jpg": "/wooden-houses-site/static/media/4.f9dae2a0f6eedcb78206.jpg",
     "static/media/5.jpg": "/wooden-houses-site/static/media/5.c5e70537cf758db858b3.jpg",
@@ -21,11 +21,11 @@
     "static/media/2.jpg": "/wooden-houses-site/static/media/2.c2be821ef28af1a71240.jpg",
     "static/media/loading.gif": "/wooden-houses-site/static/media/loading.0a3ed7594f863de914f3.gif",
     "index.html": "/wooden-houses-site/index.html",
-    "main.3d4fa020.css.map": "/wooden-houses-site/static/css/main.3d4fa020.css.map",
-    "main.bad52114.js.map": "/wooden-houses-site/static/js/main.bad52114.js.map"
+    "main.5292a37c.css.map": "/wooden-houses-site/static/css/main.5292a37c.css.map",
+    "main.967765e2.js.map": "/wooden-houses-site/static/js/main.967765e2.js.map"
   },
   "entrypoints": [
-    "static/css/main.3d4fa020.css",
-    "static/js/main.bad52114.js"
+    "static/css/main.5292a37c.css",
+    "static/js/main.967765e2.js"
   ]
 }
