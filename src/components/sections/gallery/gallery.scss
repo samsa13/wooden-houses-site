@@ -1,5 +1,7 @@
 @import '../../../scss-vars/default-variables.scss';
 
+@media only screen and (min-width: 768px) {
+
 .gallery {
     position: relative;
     width: 100%;
@@ -25,7 +27,7 @@
     }
 
 .box {
-        background-color: $--main-beige;
+     //   background-color: $--main-beige;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -46,10 +48,55 @@
             transition: 1s;
         }
     }
+}
+}
+@media only screen and (max-width: 768px) {}
 
+@media only screen and (max-width: 576px) {
+    .gallery {
+        position: relative;
+        width: 100vw;
+        height: fit-content;
+        background-color: $--main-beige;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 3rem;
 
-
-
-
-
+        h1,
+        p {
+            color: $--main-brown;
+        }
+    
+        h1 {
+            font-size: 3rem;
+            margin: 2rem 0 -2rem 0;
+        }
+    
+        p {
+            font-size: 2rem;
+        }
+        .box {
+          //  background-color: $--main-beige;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            padding-bottom: 5rem;
+            
+    
+            .img {
+                width: 92%;
+                height: fit-content;
+                box-shadow: 4px 2px 2px rgba($--main-brown, 20%);
+            }
+    
+            .img:hover {
+                transform: scale3d(1.05, 1.05, 1.05);
+                transition: 1s;
+            }
+        }
+    }    
 }

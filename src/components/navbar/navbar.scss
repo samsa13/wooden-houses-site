@@ -1,125 +1,204 @@
 @import '../../scss-vars/default-variables.scss';
 
+// media query for large screen devices
+@media only screen and (min-width: 769px) {
 
-.nav {
-  box-sizing: content-box;
-  transition: 1s;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  box-shadow: 0 2px 0 $--main-grey;
-  z-index: 3;
-  background-color: rgba($--black, 0%);
-  transition: transform .1s linear;
-
-  .logo {
-    transition: 1s;
+  //medium up
+  .nav {
+    box-sizing: content-box;
     display: flex;
     justify-content: space-between;
-    gap: 1rem;
-    margin: .2rem;
     align-items: center;
-    flex-direction: row;
-    color: $--main-grey;
-
-    h4 {
-      font-size: 3rem;
-    }
-
-    p {
-      font-size: 2.3rem;
-    }
-
-    svg {
-      transition: 1s;
-      width: 6rem;
-      height: 5rem;
-      fill: $--main-grey;
-    }
-  }
-
-  .nav-list {
-    display: flex;
-    flex-direction: row;
-    margin-right: 2rem;
-    list-style: none;
-
-    a {
-      transition: 1s;
-      justify-content: center;
-      align-items: center;
-      flex-direction: row;
-      font-size: 2.3rem;
-      padding: 1.5rem 2.5rem;
-      text-decoration: none;
-      color: $--main-grey;
-    }
-
-    a:hover {
-      background-color: rgba($--main-grey, 0.5);
-      color: $--main-white;
-    }
-  }
-
-
-  &._active {
-    transition: 1s;
-    background-color: $--main-beige;
-    box-shadow: 0 4px 4px rgba($--main-brown, 0.3);
-    //border-bottom: 0.5rem solid rgba($--main-brown, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 0 $--main-grey;
+    z-index: 3;
+    background-color: rgba($--black, 0%);
+    transition: transform .1s linear;
 
     .logo {
       transition: 1s;
-      color: $--main-brown;
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      margin: .2rem;
+      align-items: center;
+      flex-direction: row;
+      color: $--main-grey;
+
+      h4 {
+        font-size: 3rem;
+      }
+
+      p {
+        font-size: 2.3rem;
+      }
 
       svg {
         transition: 1s;
-        fill: $--main-brown;
+        width: 6rem;
+        height: 5rem;
+        fill: $--main-grey;
       }
     }
 
     .nav-list {
+      display: flex;
+      flex-direction: row;
+      margin-right: 2rem;
+      list-style: none;
 
       a {
         transition: 1s;
-        color: $--main-brown;
-
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        font-size: 2.3rem;
+        padding: 1.5rem 2.5rem;
+        text-decoration: none;
+        color: $--main-grey;
       }
 
       a:hover {
-        background-color: darken($--main-beige, 5%);
-        color: darken($--main-brown, 10%);
+        background-color: rgba($--main-grey, 0.5);
+        color: $--main-white;
       }
+    }
+
+
+    &._active {
+      transition: 1s;
+      background-color: $--main-beige;
+      box-shadow: 0 4px 4px rgba($--main-brown, 0.3);
+      //border-bottom: 0.5rem solid rgba($--main-brown, 0.3);
+
+      .logo {
+        transition: 1s;
+        color: $--main-brown;
+
+        svg {
+          transition: 1s;
+          fill: $--main-brown;
+        }
+      }
+
+      .nav-list {
+
+        a {
+          transition: 1s;
+          color: $--main-brown;
+
+        }
+
+        a:hover {
+          background-color: darken($--main-beige, 5%);
+          color: darken($--main-brown, 10%);
+        }
+      }
+    }
+
+    &._transparent {
+      transition: 1s;
+      opacity: 0;
     }
   }
 
-  &._transparent {
-    transition: 1s;
-    opacity: 0;
+  .arrow {
+    position: fixed;
+    top: 90vh;
+    left: 95%;
+    width: 7rem;
+    height: 7rem;
+    z-index: 3;
+    transition: 1s ease-out;
+    fill: $--light-brown;
+    opacity: 0.8;
+
+    &:hover {
+      fill: $--main-brown;
+      opacity: 1;
+    }
+
+    &._arrow-transparent {
+      opacity: 0;
+    }
   }
 }
 
-.arrow {
-  position: fixed;
-  top: 90vh;
-  left: 95%;
-  width: 7rem;
-  height: 7rem;
-  z-index: 3;
-  transition: 1s ease-out;
-  fill: $--light-brown;
-  opacity: 0.8;
+// media query for medium screen devices
+@media only screen and (max-width: 768px) {
+  //medium down
 
-  &:hover{
-    fill: $--main-brown;
-    opacity: 1;
+}
+
+// media query for small screen devices
+@media only screen and (max-width: 576px) {
+
+  .nav {
+    position: fixed !important;
+    transition: 1s;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 3;
+    background-color: rgba($--main-white, 0);
+   
+
+    .logo {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: .5rem;
+      padding: .5rem;
+      transition: 1s;
+      color:$--main-grey;
+      box-shadow: 0 2px 0 $--main-grey;
+      h4 {
+        font-size: 2.2rem;
+      }
+
+      p {
+        font-size: 1.1rem;
+      }
+
+      svg {
+        transition: 1s;
+        width: 3.5rem;
+        height: 3.5rem;
+        fill: $--main-grey;
+      }
+
+      .menu{
+        background-color: rgba($--black, 0%);
+        border: none;
+        margin-left: 4rem;
+      }
+    }
+
+    &._active {
+      transition: 1s;
+      background-color: $--main-beige;
+
+      .logo {
+        transition: 1s;
+        color: $--main-brown;
+        box-shadow: 0 4px 4px rgba($--main-brown, 0.3);
+        svg {
+          transition: 1s;
+          fill: $--main-brown;
+        }
+      }
+    }
+
+    &._transparent {
+      transition: 1s;
+      opacity: 0;
+    }
+
   }
 
-  &._arrow-transparent{
-    opacity: 0;
-  }
 }

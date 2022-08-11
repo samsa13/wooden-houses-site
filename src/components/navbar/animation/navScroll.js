@@ -4,13 +4,15 @@ export function navScroll() {
     if (nav !== null && arrow !== null) {
 
         const navHeight = nav.offsetHeight;
+      //  var gWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        var gHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
 
         const scrollPosition = () => window.scrollY || document.documentElement.scrollTop;
         const containActive = () => nav.classList.contains('_active');
         const containTransparent = () => nav.classList.contains('_transparent');
-        const containArrowTransparent = () => arrow.classList.contains('_arrow-transparent');
+       // const containArrowTransparent = () => arrow.classList.contains('_arrow-transparent');
         const defaultOffset = navHeight + 10;
-        const changeOffset = window.innerHeight - navHeight;
+        const changeOffset = gHeight - navHeight;
 
 
         window.addEventListener('scroll', () => {

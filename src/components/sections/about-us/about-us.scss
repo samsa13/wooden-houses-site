@@ -1,91 +1,184 @@
 @import '../../../scss-vars/default-variables.scss';
 
-.about-us {
-    position: relative;
-    width: 100%;
-    height: 110vh;
-    background-color: $--main-beige;
+@media screen and (min-width: 769px) {
+    .about-us {
+        position: relative;
+        width: 100%;
+        height: 110vh;
+        background-color: $--main-beige;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 8rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 8rem;
 
-    h1 {
-        position: absolute;
-        text-align: center;
-        top: 10rem;
-        color: $--main-brown;
-        font-size: 5rem;
+        h1 {
+            position: absolute;
+            text-align: center;
+            top: 10rem;
+            color: $--main-brown;
+            font-size: 5rem;
 
 
+        }
+
+        .picture-description {
+            padding-top: 18rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 2rem;
+
+
+            .img {
+                width: 90rem;
+                height: fit-content;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                box-shadow: 8px 6px 6px rgba($--main-brown, 20%);
+            }
+
+            .line {
+                border-bottom: 3px solid $--green;
+                width: 42rem;
+                box-shadow: 8px 6px 6px rgba($--main-brown, 20%);
+            }
+
+            h5,
+            h6 {
+                color: $--main-brown;
+                font-family: $--strong-font;
+            }
+
+            h5 {
+                font-size: 3rem;
+                margin-top: -1rem;
+            }
+
+            h6 {
+                font-size: 2rem;
+                margin-top: -2rem;
+            }
+
+        }
+
+
+        .text-container {
+            margin-top: 18rem;
+            width: 60rem;
+            height: fit-content;
+            background-color: $--main-white;
+            box-shadow: 8px 6px 6px rgba($--main-brown, 20%);
+            border-left: 5px solid $--green;
+            padding: 4rem;
+
+
+            p {
+
+
+                color: $--main-brown;
+                font-family: $--strong-font;
+                font-size: 2.5rem;
+                text-indent: 2rem;
+                text-align: justify;
+                padding: 1rem;
+
+            }
+
+        }
     }
+}
 
-    .picture-description {
-        padding-top: 18rem;
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 576px) {
+    .about-us {
+        position: relative;
+        width: 100vw;
+        height: fit-content;
+        padding-bottom: 3vh;
+        background-color: $--main-beige;
+
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        align-items: flex-start;
-        gap: 2rem;
+        align-items: center;
+        gap: 2vh;
 
-
-        .img {
-            width: 90rem;
-            height: 60rem;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            box-shadow: 8px 6px 6px rgba($--main-brown, 20%);
-        }
-
-        .line {
-            border-bottom: 3px solid $--green;
-            width: 42rem;
-            box-shadow: 8px 6px 6px rgba($--main-brown, 20%);
-        }
-
-        h5,
-        h6 {
+        h1 {
             color: $--main-brown;
-            font-family: $--strong-font;
-        }
-
-        h5 {
             font-size: 3rem;
-            margin-top: -1rem;
+            margin-top: 2rem;
         }
 
-        h6 {
-            font-size: 2rem;
-          margin-top: -2rem;
+        .picture-description {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 1rem;
+            width: 90vw;
+            height: fit-content;
+
+            .img {
+                width: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                box-shadow: 4px 2px 2px rgba($--main-brown, 20%);
+            }
+
+            .line {
+                border-bottom: 3px solid $--green;
+                width: 60%;
+                box-shadow: 4px 2px 2px rgba($--main-brown, 20%);
+                align-self: flex-start;
+            }
+
+            h5,
+            h6 {
+                color: $--main-brown;
+                font-family: $--strong-font;
+                align-self: flex-start;
+            }
+
+            h5 {
+                font-size: 1.5rem;
+                margin-top: -.5rem;
+            }
+
+            h6 {
+                font-size: 1.1rem;
+                margin-top: -1rem;
+            }
+
         }
 
-    }
+        .text-container {
+            width: 90vw;
+            height: fit-content;
+            background-color: $--main-white;
+            box-shadow: 4px 2px 2px rgba($--main-brown, 20%);
+            border-top: 3px solid #406D4B;
+            padding: 2rem;
 
+            p {
+                color: $--main-brown;
+                font-family: $--strong-font;
+                font-size: 1.9rem;
+                text-align: justify;
+                padding: .5rem;
+                text-indent: 1.5rem;
 
-    .text-container {
-        margin-top: 18rem;
-        width: 60rem;
-        height: 72rem;
-        background-color: $--main-white;
-        box-shadow: 8px 6px 6px rgba($--main-brown, 20%);
-        border-left: 5px solid #406D4B;
-        padding: 4rem;
+            }
 
-
-        p {
-            
-            
-            color: $--main-brown;
-            font-family: $--strong-font;
-            font-size: 2.5rem;
-            text-indent: 2rem;
-            text-align: justify;
-            padding: 1rem;
-            
+            p:first-letter{
+                font-size: 1.7rem;
+                font-family: $--primary-font;
+            }
         }
-
     }
 }

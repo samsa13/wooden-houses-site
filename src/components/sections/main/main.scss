@@ -1,93 +1,97 @@
 @import '../../../scss-vars/default-variables.scss';
 @import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 
-.main {
-    background: url('../../../assets/background-imgs/main-back-hause.jpg') rgba($--black, 0.6);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: multiply;
-    width: 100%;
-    height: 100vh;
-    background-attachment: fixed;
-
-
-    .text-block {
-        position: absolute;
-        margin: 15% 20%;
-        width: 45%;
-        height: 100%;
-        text-align: center;
-
-
-        h1,
-        p {
-            color: $--main-beige;
-        }
-
-        h1 {
-            font-size: 7rem; //8rem
-        }
-
-        .line {
-            border-bottom: 3px solid $--main-beige;
-            margin: 4rem;
-        }
-
-        p {
-            font-size: 5rem;
-        }
-
-        span {
-            font-family: $--strong-font;
-            font-weight: bold;
-        }
-    }
-
-    .page-buttons {
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        flex-direction: column;
+@media screen and (min-width: 769px) {
+    .main {
+        background: url('../../../assets/background-imgs/main-back-hause.jpg') rgba($--black, 0.6);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: multiply;
         width: 100%;
         height: 100vh;
-        gap: 3rem;
-        padding-right: 2rem;
-        padding-top: 8rem;
+        background-attachment: fixed;
 
-        .button {
-            @include button(rgba($--main-grey, 30%), $--main-grey);
-            width: 40rem; //60rem
-            font-size: 4rem; //6rem
 
-            
+        .text-block {
+            position: absolute;
+            margin: 15% 20%;
+            width: 45%;
+            height: 100%;
+            text-align: center;
+
+
+            h1,
+            p {
+                color: $--main-beige;
+            }
+
+            h1 {
+                font-size: 7rem; //8rem
+            }
+
+            .line {
+                border-bottom: 3px solid $--main-beige;
+                margin: 4rem;
+            }
+
+            p {
+                font-size: 5rem;
+            }
+
+            span {
+                font-family: $--strong-font;
+                font-weight: bold;
+            }
         }
 
-        .button:hover {
-            transition: background-color 1s;
-            background-color: rgba($--main-grey, 50%);
-            color: $--main-white;
-            cursor: pointer;
+        .page-buttons {
             display: flex;
-            flex-direction: row;
-            justify-content:center;
-            align-items: center;
-            gap: 10%;
-            
-        }
+            justify-content: center;
+            align-items: flex-end;
+            flex-direction: column;
+            width: 100%;
+            height: 100vh;
+            gap: 3rem;
+            padding-right: 2rem;
+            padding-top: 8rem;
 
-        .button:hover::after {
-            content: "\f061";
-            font-family: FontAwesome !important;
-            color: $--main-white;
-            font-size: 4rem;
-            
-        }
+            .button {
+                @include button(rgba($--main-grey, 30%), $--main-grey);
+                width: 40rem; //60rem
+                font-size: 4rem; //6rem
 
+
+            }
+
+            .button:hover {
+                transition: background-color 1s;
+                background-color: rgba($--main-grey, 50%);
+                color: $--main-white;
+                cursor: pointer;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 10%;
+
+            }
+
+            .button:hover::after {
+                content: "\f061";
+                font-family: FontAwesome !important;
+                color: $--main-white;
+                font-size: 4rem;
+
+            }
+
+        }
     }
+
 }
 
-@media screen and (max-width: 1300px) {
+
+@media screen and (max-width: 768px) {
     .text-block {
 
         margin: 17vh 0;
@@ -100,5 +104,76 @@
 
     .page-buttons {
         justify-content: flex-end;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .main {
+        background: url('../../../assets/background-imgs/main-back-hause.jpg') rgba($--black, 0.6);
+        background-position: right 70% bottom 0%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: multiply;
+        width: 100vw;
+        height: 100vh;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        align-items: center;
+
+        .text-block {
+            text-align: center;
+            width: 95%;
+            height: 20vh;
+            
+            h1,
+            p {
+                color: $--main-beige;
+            }
+
+            h1 {
+                font-size: 4rem; 
+            }
+
+            .line {
+                border-bottom: 3px solid $--main-beige;
+                margin: 2rem;
+            }
+
+            p {
+                font-size: 2rem;
+            }
+
+            span {
+                font-family: $--strong-font;
+                font-weight: bold;
+            }
+        }
+
+        .page-buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 95vw;
+            height: fit-content;
+            gap: 1.5rem;
+
+            .button {
+                @include button(rgba($--main-grey, 30%), $--main-grey);
+                width: 40%; 
+                font-size: 2rem; 
+                border-radius: 2rem !important;
+                padding: 1.5rem !important;
+            }
+
+            .button:hover {
+                transition: background-color 1s;
+                background-color: rgba($--main-grey, 50%);
+                color: $--main-white;
+            }
+        }
     }
 }

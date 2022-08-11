@@ -1,4 +1,4 @@
-import { SliderAction, SliderActionTypes, SliderState } from "../../types/slider";
+import { SliderAction, SliderActionTypes } from "../../types/slider";
 
 export const setIncrease = (num: number):SliderAction => {
     return {
