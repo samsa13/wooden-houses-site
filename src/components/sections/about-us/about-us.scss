@@ -4,27 +4,25 @@
     .about-us {
         position: relative;
         width: 100%;
-        height: 110vh;
+        height: 100vh;
         background-color: $--main-beige;
-
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: flex-start;
-        gap: 8rem;
+        gap: 5%;
+        padding-top: 13rem;
 
         h1 {
             position: absolute;
             text-align: center;
-            top: 10rem;
+            top: 7rem;
             color: $--main-brown;
-            font-size: 5rem;
-
-
+            font-size: 4rem;
         }
 
         .picture-description {
-            padding-top: 18rem;
+            width: 50%;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
@@ -33,7 +31,7 @@
 
 
             .img {
-                width: 90rem;
+                width: 100%;
                 height: fit-content;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -43,7 +41,7 @@
 
             .line {
                 border-bottom: 3px solid $--green;
-                width: 42rem;
+                width: 50%;
                 box-shadow: 8px 6px 6px rgba($--main-brown, 20%);
             }
 
@@ -54,12 +52,12 @@
             }
 
             h5 {
-                font-size: 3rem;
+                font-size: 2.5rem;
                 margin-top: -1rem;
             }
 
             h6 {
-                font-size: 2rem;
+                font-size: 1.7rem;
                 margin-top: -2rem;
             }
 
@@ -67,22 +65,18 @@
 
 
         .text-container {
-            margin-top: 18rem;
-            width: 60rem;
+            width: 35%;
             height: fit-content;
             background-color: $--main-white;
             box-shadow: 8px 6px 6px rgba($--main-brown, 20%);
             border-left: 5px solid $--green;
-            padding: 4rem;
-
+            padding: 3rem;
 
             p {
-
-
                 color: $--main-brown;
                 font-family: $--strong-font;
-                font-size: 2.5rem;
-                text-indent: 2rem;
+                font-size: 2rem;
+                text-indent: 1.5rem;
                 text-align: justify;
                 padding: 1rem;
 

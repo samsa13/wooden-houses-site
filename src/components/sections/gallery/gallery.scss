@@ -11,19 +11,19 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    gap: 6rem;
+    gap: 3vh;
     h1,
     p {
         color: $--main-brown;
     }
 
     h1 {
-        font-size: 5rem;
-        margin: 10rem 0 -5rem 0;
+        font-size: 4rem;
+        margin: 10vh 0 -3vh 0;
     }
 
     p {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
 .box {

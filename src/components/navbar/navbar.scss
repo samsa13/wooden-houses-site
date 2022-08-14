@@ -33,13 +33,13 @@
       }
 
       p {
-        font-size: 2.3rem;
+        font-size: 2rem;
       }
 
       svg {
         transition: 1s;
-        width: 6rem;
-        height: 5rem;
+        width: 5rem;
+        height: 4rem;
         fill: $--main-grey;
       }
     }
@@ -63,7 +63,7 @@
 
       a:hover {
         background-color: rgba($--main-grey, 0.5);
-        color: $--main-white;
+        color: rgba($--main-white, 0.8);
       }
     }
 
@@ -72,7 +72,6 @@
       transition: 1s;
       background-color: $--main-beige;
       box-shadow: 0 4px 4px rgba($--main-brown, 0.3);
-      //border-bottom: 0.5rem solid rgba($--main-brown, 0.3);
 
       .logo {
         transition: 1s;
@@ -93,8 +92,8 @@
         }
 
         a:hover {
-          background-color: darken($--main-beige, 5%);
-          color: darken($--main-brown, 10%);
+          background-color: rgba($--light-brown, 0.1);
+          color: $--main-brown;
         }
       }
     }
@@ -108,7 +107,7 @@
   .arrow {
     position: fixed;
     top: 90vh;
-    left: 95%;
+    left: 94%;
     width: 7rem;
     height: 7rem;
     z-index: 3;

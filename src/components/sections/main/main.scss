@@ -3,7 +3,7 @@
 
 @media screen and (min-width: 769px) {
     .main {
-        background: url('../../../assets/background-imgs/main-back-hause.jpg') rgba($--black, 0.6);
+        background: url('../../../assets/background-imgs/main-back-hause.jpg') rgba($--black, 0.4);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -11,15 +11,16 @@
         width: 100%;
         height: 100vh;
         background-attachment: fixed;
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        flex-direction: row;
 
 
         .text-block {
-            position: absolute;
-            margin: 15% 20%;
-            width: 45%;
-            height: 100%;
+            width: 75%;
             text-align: center;
-
+            padding: 20%;
 
             h1,
             p {
@@ -27,16 +28,16 @@
             }
 
             h1 {
-                font-size: 7rem; //8rem
+                font-size: 5rem; 
             }
 
             .line {
                 border-bottom: 3px solid $--main-beige;
-                margin: 4rem;
+                margin: 5% 10%;
             }
 
             p {
-                font-size: 5rem;
+                font-size: 3rem;
             }
 
             span {
@@ -48,40 +49,37 @@
         .page-buttons {
             display: flex;
             justify-content: center;
-            align-items: flex-end;
+            align-items: center;
             flex-direction: column;
-            width: 100%;
-            height: 100vh;
-            gap: 3rem;
-            padding-right: 2rem;
-            padding-top: 8rem;
+            width: 25%;
+            gap: 2rem;
+           
 
             .button {
-                @include button(rgba($--main-grey, 30%), $--main-grey);
-                width: 40rem; //60rem
-                font-size: 4rem; //6rem
-
-
+                @include button(rgba($--main-grey, 0.3),  rgba($--main-grey, 0.8));
+                width: 35vh; 
+                font-size: 2.3rem; 
             }
 
             .button:hover {
-                transition: background-color 1s;
+                transition: 1s;
                 background-color: rgba($--main-grey, 50%);
-                color: $--main-white;
+                color: rgba($--main-white, 0.8);
                 cursor: pointer;
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
-                gap: 10%;
+                 gap: 10%;
 
             }
 
             .button:hover::after {
                 content: "\f061";
                 font-family: FontAwesome !important;
-                color: $--main-white;
-                font-size: 4rem;
+                color: $--main-grey;
+                font-size: 2rem;
+              
 
             }
 
