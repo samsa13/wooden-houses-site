@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/wooden-houses-site/static/css/main.7da90594.css",
+    "main.css": "/wooden-houses-site/static/css/main.9389eb5e.css",
     "main.js": "/wooden-houses-site/static/js/main.967765e2.js",
     "static/media/wood.jpg": "/wooden-houses-site/static/media/wood.07d05886c0eb46ac61ce.jpg",
     "static/media/4.jpg": "/wooden-houses-site/static/media/4.f9dae2a0f6eedcb78206.jpg",
@@ -25,11 +25,11 @@
     "static/media/Dubai-Regular.ttf": "/wooden-houses-site/static/media/Dubai-Regular.8455b3cdc22765532fb6.ttf",
     "static/media/loading.gif": "/wooden-houses-site/static/media/loading.0a3ed7594f863de914f3.gif",
     "index.html": "/wooden-houses-site/index.html",
-    "main.7da90594.css.map": "/wooden-houses-site/static/css/main.7da90594.css.map",
+    "main.9389eb5e.css.map": "/wooden-houses-site/static/css/main.9389eb5e.css.map",
     "main.967765e2.js.map": "/wooden-houses-site/static/js/main.967765e2.js.map"
   },
   "entrypoints": [
-    "static/css/main.7da90594.css",
+    "static/css/main.9389eb5e.css",
     "static/js/main.967765e2.js"
   ]
 }
