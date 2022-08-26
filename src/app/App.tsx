@@ -5,7 +5,6 @@ import AboutUs from '../components/sections/about-us/AboutUs';
 import Contacts from '../components/sections/contacts/Contacts';
 import Gallery from '../components/sections/gallery/Gallery';
 import Main from '../components/sections/main/Main';
-import Process from '../components/sections/process/Process';
 import WhyUs from '../components/sections/why-us/WhyUsSection';
 
 
@@ -17,7 +16,6 @@ const App: FC = () => {
      <AboutUs />
      <WhyUs />
      <Gallery />
-     <Process />
      <Contacts />
     </div>
   );

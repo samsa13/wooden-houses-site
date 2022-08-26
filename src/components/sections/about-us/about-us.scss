@@ -1,22 +1,22 @@
 @import '../../../scss-vars/default-variables.scss';
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1270px) {
     .about-us {
         position: relative;
         width: 100%;
-        height: 100vh;
+        height: fit-content;
         background-color: $--main-beige;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: flex-start;
         gap: 5%;
-        padding-top: 13rem;
+        padding: 15vh 0 5vh 0;
 
         h1 {
             position: absolute;
             text-align: center;
-            top: 7rem;
+            top: 5vh;
             color: $--main-brown;
             font-size: 4rem;
         }
@@ -66,6 +66,7 @@
 
         .text-container {
             width: 35%;
+            max-width: 48rem;
             height: fit-content;
             background-color: $--main-white;
             box-shadow: 8px 6px 6px rgba($--main-brown, 20%);
@@ -86,9 +87,9 @@
     }
 }
 
-@media screen and (max-width: 768px) {}
+//@media screen and (max-width: 768px) {}
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 1269px) {
     .about-us {
         position: relative;
         width: 100vw;

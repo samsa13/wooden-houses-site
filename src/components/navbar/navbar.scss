@@ -1,7 +1,7 @@
 @import '../../scss-vars/default-variables.scss';
 
 // media query for large screen devices
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1270px) {
 
   //medium up
   .nav {
@@ -44,6 +44,7 @@
       }
     }
 
+
     .nav-list {
       display: flex;
       flex-direction: row;
@@ -64,7 +65,9 @@
       a:hover {
         background-color: rgba($--main-grey, 0.5);
         color: rgba($--main-white, 0.8);
+
       }
+
     }
 
 
@@ -107,9 +110,12 @@
   .arrow {
     position: fixed;
     top: 90vh;
-    left: 94%;
+    left: 95%;
     width: 7rem;
+    max-width: 5vw;
     height: 7rem;
+    max-height: 5vw;
+    padding: .5vh;
     z-index: 3;
     transition: 1s ease-out;
     fill: $--light-brown;
@@ -127,13 +133,12 @@
 }
 
 // media query for medium screen devices
-@media only screen and (max-width: 768px) {
-  //medium down
-
-}
+//@media only screen and (max-width: 768px) {
+//medium down
+//}
 
 // media query for small screen devices
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 1269px) {
 
   .nav {
     position: fixed !important;
@@ -144,24 +149,28 @@
     width: 100vw;
     z-index: 3;
     background-color: $--main-beige;
-   
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5rem;
+    padding: .5rem;
+    box-shadow: 0 4px 4px rgba($--main-brown, 0.3);
 
     .logo {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      gap: .5rem;
-      padding: .5rem;
       transition: 1s;
       color: $--main-brown;
-      box-shadow: 0 4px 4px rgba($--main-brown, 0.3);
+      display: flex;
+      flex-direction: row;
+      gap: .5rem;
+
       h4 {
-        font-size: 2.2rem;
+        font-size: 2rem;
       }
 
       p {
-        font-size: 1.1rem;
+        font-size: 1rem;
       }
 
       svg {
@@ -170,11 +179,19 @@
         height: 3.5rem;
         fill: $--main-brown;
       }
+    }
 
-      .menu{
-        background-color: rgba($--black, 0%);
-        border: none;
-        margin-left: 4rem;
+    .menu {
+      background-color: rgba($--black, 0%);
+      border: none;
+      z-index: 3;
+
+      svg {
+        transition: 1s;
+        width: 3.5rem;
+        height: 3.5rem;
+        fill: $--main-brown;
+        z-index: 2;
       }
     }
 
@@ -185,7 +202,7 @@
       .logo {
         transition: 1s;
         color: $--main-brown;
-        box-shadow: 0 4px 4px rgba($--main-brown, 0.3);
+
         svg {
           transition: 1s;
           fill: $--main-brown;
@@ -198,6 +215,52 @@
       opacity: 0;
     }
 
+  
+
+
+    .nav-list {
+      position: fixed;
+      z-index: 2;
+      top: 49px;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba($--black, 0.5);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-end;
+      list-style: none;
+
+
+      li {
+        width: 35%;
+        min-width: 15rem;
+        max-width: 20rem;
+        background-color: rgba($--main-beige, 0.8);
+        padding: 1.5rem 2.5rem;
+        border-radius: 1.5rem;
+        margin: 3rem 3rem 0 0;
+        text-align: center;
+
+        a {
+          font-size: 2.3rem;
+          text-decoration: none;
+          color: $--main-brown;
+        }
+      }
+
+      &.is-not-visible {
+        transition: 1s;
+        transform: translateX(100vw);
+      }
+
+      &.is-visible {
+        transition: 1s;
+        transform: translateX(0);
+      }
+
+    }
   }
 
 }

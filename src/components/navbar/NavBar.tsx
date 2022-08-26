@@ -10,6 +10,20 @@ const NavBar: FC = () => {
 
     useEffect(navScroll, []);
 
+    const onClick = () => {
+
+        const navList = document.getElementById('nav-list');
+
+        if (navList?.classList.contains('is-visible')) {
+            navList.classList.remove('is-visible');
+            navList.classList.add('is-not-visible');
+        } else {
+            navList?.classList.add('is-visible');
+            navList?.classList.remove('is-not-visible');
+        }
+
+    };
+
     return (
         <nav id="navbar-section" className="nav-section" >
             <div id='navbar' className='nav'>
@@ -20,33 +34,29 @@ const NavBar: FC = () => {
                         <p>Строительство домов в Ярославской области</p>
                         <h4>ДОМА ДЕРЕВЯННЫЕ</h4>
                     </div>
-                    <Breakpoint medium down>
-                        <button className='menu'>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z" /></svg>
-                        </button>
-                    </Breakpoint>
                 </div>
-                <Breakpoint medium up>
-                    <ul className="nav-list">
-                        <li>
-                            <a href="#main">Главная</a>
-                        </li>
-                        <li>
-                            <a href="#about-us">О нас</a>
-                        </li>
-                        <li>
-                            <a href="#gallery">Галерея</a>
-                        </li>
-                        <li>
-                            <a href="#process">Процесс</a>
-                        </li>
-                        <li>
-                            <a href="#contacts">Контакты</a>
-                        </li>
-                    </ul>
+                <Breakpoint customQuery="(max-width: 1269px)">
+                    <button className='menu' onClick={onClick}>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z" /></svg>
+                    </button>
                 </Breakpoint>
+                <ul className="nav-list is-not-visible" id='nav-list'>
+                    <li>
+                        <a href="#main" onClick={onClick}>Главная</a>
+                    </li>
+                    <li>
+                        <a href="#about-us" onClick={onClick}>О нас</a>
+                    </li>
+                    <li>
+                        <a href="#gallery" onClick={onClick}> Галерея</a>
+                    </li>
+                    <li>
+                        <a href="#contacts" onClick={onClick}>Контакты</a>
+                    </li>
+                </ul>
             </div>
-            <Breakpoint small up>
+
+            <Breakpoint customQuery="(min-width: 1270px)">
                 <a href="#main"><svg id='arrow' className='arrow _arrow-transparent' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 0C114.6 0 0 114.6 0 256c0 141.4 114.6 256 256 256s256-114.6 256-256C512 114.6 397.4 0 256 0zM390.6 310.6c-12.5 12.5-32.75 12.5-45.25 0L256 221.3L166.6 310.6c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l112-112C239.6 147.1 247.8 144 256 144s16.38 3.125 22.62 9.375l112 112C403.1 277.9 403.1 298.1 390.6 310.6z" /></svg></a>
             </Breakpoint>
 

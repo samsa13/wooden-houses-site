@@ -1,7 +1,7 @@
 @import '../../../scss-vars/default-variables.scss';
 @import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1270px) {
     .contacts {
         position: relative;
         background: url('../../../assets/background-imgs/rafters.jpg') rgba($--main-brown, 0.8);
@@ -10,7 +10,8 @@
         background-size: cover;
         background-blend-mode: darken;
         width: 100%;
-        height: 100vh;
+        height: fit-content;
+        padding: 10vh 0 3vh 0;
         background-attachment: fixed;
         flex-wrap: wrap;
 
@@ -20,7 +21,7 @@
         flex-direction: row;
         justify-content: center;
         align-items: flex-start;
-        gap: 10vh;
+        gap: 5vh;
 
         h1 {
             position: absolute;
@@ -30,7 +31,7 @@
         }
 
         .contacts-text {
-            margin-top: 20vh;
+            margin-top: 10vh;
             margin-left: 15rem;
             display: flex;
             flex-direction: column;
@@ -94,9 +95,11 @@
 
         .survey-form {
             width: 50vh;
+            min-width: 38rem;
             height: fit-content;
+            max-height: 75rem;
             background-color: rgba($--main-white, 0.7);
-            margin-top: 20vh;
+            margin-top: 10vh;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -134,6 +137,7 @@
 
             .form {
                 width: 60%;
+                min-width: 30rem;
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-start;
@@ -191,8 +195,7 @@
         }
 
         .google-map {
-            position: absolute;
-            width: 100%;
+            width: 100vw;
             height: 90vh;
             top: 100vh;
             border: none;
@@ -201,15 +204,12 @@
 
 
         .logo {
-            position: absolute;
             width: 100%;
-            height: 12vh;
-            top: 190vh;
-            background: $--main-brown;
+            height: fit-content;
+            padding: 2vh;
             display: flex;
             justify-content: flex-start;
-            gap: 10rem;
-            margin: .2rem;
+            gap: 2vw;
             align-items: center;
             flex-direction: row;
             color: $--light-brown;
@@ -273,9 +273,9 @@
     }
 }
 
-@media screen and (max-width: 768px) {}
+//@media screen and (max-width: 768px) {}
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 1269px) {
     .contacts {
         position: relative;
         background: url('../../../assets/background-imgs/rafters.jpg') rgba($--main-brown, 0.8);
@@ -293,7 +293,7 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        gap: 3vh;
+        gap: 5vh;
 
         h1 {
             margin-top: 4vh;
@@ -312,7 +312,7 @@
             p {
                 font-size: 2rem;
                 font-family: $--strong-font;
-                line-height: 4vh;
+                line-height: 6vh;
 
                 a {
                     color: $--main-white;
@@ -357,6 +357,7 @@
 
         .survey-form {
             width: 85vw;
+            max-width: 35rem;
             height: fit-content;
             background-color: rgba($--main-white, 0.7);
             display: flex;
@@ -365,7 +366,7 @@
             align-items: center;
 
             .header {
-                width: 95vw;
+                width: 110%;
                 height: fit-content;
                 margin-top: 2rem;
                 background-color: $--main-white;
@@ -389,7 +390,7 @@
             }
 
             .triangle {
-                margin-right: 85vw;
+                margin-right: 98%;
                 border: 2rem solid transparent;
                 border-top: 2rem solid lighten($--light-brown, 10);
                 border-right: 2rem solid lighten($--light-brown, 10);
@@ -462,13 +463,13 @@
         .logo {
             width: 100%;
             height: fit-content;
-            background: $--main-brown;
             display: flex;
-            justify-content: space-evenly;
-            margin: 1rem;
+            justify-content: flex-start;
+            padding: 0 3vw 3vh 3vw;
             align-items: center;
             flex-direction: row;
             flex-wrap: wrap;
+            gap: 3vw;
             color: $--light-brown;
 
             p {

@@ -1,7 +1,7 @@
 @import '../../../scss-vars/default-variables.scss';
 @import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1270px) {
     .main {
         background: url('../../../assets/background-imgs/main-back-hause.jpg') rgba($--black, 0.4);
         background-position: center;
@@ -19,6 +19,7 @@
 
         .text-block {
             width: 75%;
+            max-width: 135rem;
             text-align: center;
             padding: 20%;
 
@@ -57,12 +58,14 @@
 
             .button {
                 @include button(rgba($--main-grey, 0.3),  rgba($--main-grey, 0.8));
-                width: 35vh; 
+                width: 30vh;
+                max-width: 42rem; 
+                min-width: 25rem;
                 font-size: 2.3rem; 
             }
 
             .button:hover {
-                transition: 1s;
+                transition: background-color 1s;
                 background-color: rgba($--main-grey, 50%);
                 color: rgba($--main-white, 0.8);
                 cursor: pointer;
@@ -77,35 +80,19 @@
             .button:hover::after {
                 content: "\f061";
                 font-family: FontAwesome !important;
-                color: $--main-grey;
+                color: $--main-white;
                 font-size: 2rem;
-              
-
             }
-
         }
     }
-
 }
 
 
-@media screen and (max-width: 768px) {
-    .text-block {
+//@media screen and (max-width: 1269px) {
+   
+//}
 
-        margin: 17vh 0;
-        width: 100vw;
-
-        h1 {
-            font-size: 5rem;
-        }
-    }
-
-    .page-buttons {
-        justify-content: flex-end;
-    }
-}
-
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 1269px) {
     .main {
         background: url('../../../assets/background-imgs/main-back-hause.jpg') rgba($--black, 0.4);
         background-position: right 70% bottom 0%;
@@ -123,6 +110,7 @@
         .text-block {
             text-align: center;
             width: 95%;
+            max-width: 40rem;
             height: 20vh;
             
             h1,
@@ -160,8 +148,10 @@
             gap: 1.5rem;
 
             .button {
-                @include button(rgba($--main-grey, 30%), $--main-grey);
+                @include button(rgba($--main-white, 0.3),rgba($--main-white, 0.8));
                 width: 40%; 
+                min-width: 16rem;
+                max-width: 20rem;
                 font-size: 2rem; 
                 border-radius: 2rem !important;
                 padding: 1.5rem !important;
@@ -169,7 +159,7 @@
 
             .button:hover {
                 transition: background-color 1s;
-                background-color: rgba($--main-grey, 60%);
+                background-color: rgba($--main-white, 60%);
                 color: $--main-white;
             }
         }

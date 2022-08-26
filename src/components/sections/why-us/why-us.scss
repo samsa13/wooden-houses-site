@@ -1,6 +1,6 @@
 @import '../../../scss-vars/default-variables.scss';
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1270px) {
     .why-us {
         position: relative;
         background: url('../../../assets/background-imgs/wood.jpg') rgba($--main-brown, 0.7);
@@ -30,13 +30,15 @@
         }
 
         div {
-            width: 140vh;
-            height: 25vh;
+            width: 82vw;
+          //  min-width: fit-content;
+            max-width: 104rem;
+            height: 24vh;
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            gap: 5vh;
+            gap: 3vw;
 
             p {
                 width: 30%;
@@ -52,9 +54,9 @@
     }
 }
 
-@media screen and (max-width: 769px) {}
+//@media screen and (max-width: 769px) {}
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 1269px) {
     .why-us {
         position: relative;
         background: url('../../../assets/background-imgs/wood.jpg') rgba($--main-brown, 0.7);
@@ -86,11 +88,12 @@
         div {
             height: fit-content;
             width: 97%;
+            max-width: 36rem;
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            gap: .5vw;
+            gap: 1vw;
 
             p {
                 width: 40%;
