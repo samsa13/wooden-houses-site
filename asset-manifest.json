@@ -1,22 +1,18 @@
 {
   "files": {
-    "main.css": "/wooden-houses-site/static/css/main.f9c16269.css",
-    "main.js": "/wooden-houses-site/static/js/main.e567a097.js",
-    "static/media/wood.jpg": "/wooden-houses-site/static/media/wood.07d05886c0eb46ac61ce.jpg",
-    "static/media/rafters.jpg": "/wooden-houses-site/static/media/rafters.f8f9b8b9f2450be3e728.jpg",
-    "static/media/director-photo.jpg": "/wooden-houses-site/static/media/director-photo.ad3306ff21ffb35ab491.jpg",
-    "static/media/Fairymuffinroundpop.eot": "/wooden-houses-site/static/media/Fairymuffinroundpop.b25271e7fa0d81e71527.eot",
-    "static/media/Fairymuffinroundpop.ttf": "/wooden-houses-site/static/media/Fairymuffinroundpop.2cffe17bb561b2ecbd15.ttf",
-    "static/media/main-back-hause.jpg": "/wooden-houses-site/static/media/main-back-hause.2b85063a935341ab0948.jpg",
-    "static/media/Dubai-Regular.eot": "/wooden-houses-site/static/media/Dubai-Regular.90153397060ca3a114de.eot",
-    "static/media/Dubai-Regular.ttf": "/wooden-houses-site/static/media/Dubai-Regular.8455b3cdc22765532fb6.ttf",
-    "static/media/loading.gif": "/wooden-houses-site/static/media/loading.0a3ed7594f863de914f3.gif",
-    "index.html": "/wooden-houses-site/index.html",
-    "main.f9c16269.css.map": "/wooden-houses-site/static/css/main.f9c16269.css.map",
-    "main.e567a097.js.map": "/wooden-houses-site/static/js/main.e567a097.js.map"
+    "main.css": "/static/css/main.81c99901.css",
+    "main.js": "/static/js/main.655f849b.js",
+    "static/media/Fairymuffinroundpop.eot": "/static/media/Fairymuffinroundpop.b25271e7fa0d81e71527.eot",
+    "static/media/Fairymuffinroundpop.ttf": "/static/media/Fairymuffinroundpop.2cffe17bb561b2ecbd15.ttf",
+    "static/media/Dubai-Regular.eot": "/static/media/Dubai-Regular.90153397060ca3a114de.eot",
+    "static/media/Dubai-Regular.ttf": "/static/media/Dubai-Regular.8455b3cdc22765532fb6.ttf",
+    "static/media/loading.gif": "/static/media/loading.0a3ed7594f863de914f3.gif",
+    "index.html": "/index.html",
+    "main.81c99901.css.map": "/static/css/main.81c99901.css.map",
+    "main.655f849b.js.map": "/static/js/main.655f849b.js.map"
   },
   "entrypoints": [
-    "static/css/main.f9c16269.css",
-    "static/js/main.e567a097.js"
+    "static/css/main.81c99901.css",
+    "static/js/main.655f849b.js"
   ]
 }
