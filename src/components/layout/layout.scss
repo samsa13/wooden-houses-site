@@ -1,0 +1,104 @@
+@import '../../scss-vars/default-variables.scss';
+
+@media screen and (min-width: 1270px) {
+   
+
+        footer {
+            width: 100%;
+            height: fit-content;
+            padding: 2vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 2vw;
+            color: $--light-brown;
+            background-color: darken($--main-brown, 5);
+
+            p {
+                font-size: 1.5rem;
+            }
+
+            a {
+                color: $--light-brown;
+                text-decoration: none;
+                font-family: $--strong-font;
+                font-weight: bolder;
+            }
+
+            .company-name {
+                display: flex;
+                flex-direction: row;
+
+                h4 {
+                    font-size: 2rem;
+                }
+
+                svg {
+                    width: 5rem;
+                    height: 4rem;
+                    fill: $--light-brown;
+                    margin-left: 5rem;
+                    margin-right: 1rem;
+                }
+
+            }
+
+            .strong_font {
+                font-family: $--strong-font;
+                font-weight: bold;
+            }
+        }
+    }
+
+
+@media screen and (max-width: 1269px) {
+    footer {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: flex-start;
+        padding: 3vh 3vw 3vh 3vw;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 3vw;
+        color: $--light-brown;
+        background-color: darken($--main-brown, 5);
+
+        p {
+            font-size: 1rem;
+        }
+
+        a {
+            color: $--light-brown;
+            text-decoration: none;
+            font-family: $--strong-font;
+            font-weight: bolder;
+            margin-left: 1rem;
+        }
+
+        .company-name {
+            display: flex;
+            flex-direction: row;
+
+            h4 {
+                font-size: 2rem;
+            }
+
+            svg {
+                width: 3rem;
+                height: 3rem;
+                fill: $--light-brown;
+                margin-left: 1rem;
+                margin-right: 1rem;
+            }
+
+        }
+
+        .strong_font {
+            font-family: $--strong-font;
+            font-weight: bold;
+        }
+    }
+}

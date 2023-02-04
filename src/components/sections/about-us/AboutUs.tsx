@@ -6,7 +6,7 @@ const AboutUs:FC = () => {
     <section id="about-us" className='about-us'>
       <h1>О нас</h1>
       <div className='picture-description'>
-        <img src={require('../../../assets/background-imgs/director-photo.jpg')} className='img' />
+        <img alt="director photo" src="https://res.cloudinary.com/echeperegina/image/upload/v1675529684/doma_derevyannye/back_picks/director-photo_bq2y4b.jpg" className='img' />
         <div className='line'></div>
         <h5>Чеперегин Михаил Сергеевич</h5>
         <h6>Директор компании</h6>

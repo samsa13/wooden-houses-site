@@ -12,12 +12,12 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <BrowserRouter>{/*пока не используется */}
-    <Provider store={store}>
+  <Provider store={store}>
+    <BrowserRouter>
       <BreakpointProvider>
-      <App />
+        <App />
       </BreakpointProvider>
-    </Provider>
-  </BrowserRouter>
+    </BrowserRouter>
+  </Provider>
 );
 

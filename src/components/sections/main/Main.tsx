@@ -1,5 +1,6 @@
 import React, { FC } from 'react'
-import { Breakpoint } from 'react-socks'
+import { Link } from 'react-router-dom'
+import { RouteNames } from '../../../router'
 import './main.scss'
 
 
@@ -12,10 +13,10 @@ const Main:FC = () => {
         <p>Успешно завершено более <span>150</span> проектов</p>
       </div>
       <nav className='page-buttons'>
-        <button id="houses" className='button'>Дома</button>
-        <button id="bathhouses" className='button'>Бани</button>
-        <button id="foundations" className='button'>Фундаменты</button>
-        <button id="summer-houses" className='button'>Беседки</button>
+        <Link to={RouteNames.HOUSES} className='button'>Дома</Link>
+        <Link to={RouteNames.BATH_HOUSES} className='button'>Бани</Link>
+        <Link to={RouteNames.FOUNDATIONS} className='button'>Фундаменты</Link>
+        <Link to={RouteNames.SUMMER_HOUSES} className='button'>Беседки</Link>
       </nav>
     </section>
   )

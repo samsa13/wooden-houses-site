@@ -62,6 +62,8 @@
                 max-width: 42rem; 
                 min-width: 25rem;
                 font-size: 2.3rem; 
+                text-decoration: none;
+                text-align: center;
             }
 
             .button:hover {
@@ -94,7 +96,7 @@
 
 @media screen and (max-width: 1269px) {
     .main {
-        background: url('../../../assets/background-imgs/main-back-hause.jpg') rgba($--black, 0.4);
+        background: url('https://res.cloudinary.com/echeperegina/image/upload/v1675529684/doma_derevyannye/back_picks/main-back-hause_kke3kj.jpg') rgba($--black, 0.4);
         background-position: right 70% bottom 0%;
         background-repeat: no-repeat;
         background-size: cover;
@@ -155,6 +157,8 @@
                 font-size: 2rem; 
                 border-radius: 2rem !important;
                 padding: 1.5rem !important;
+                text-decoration: none;
+                text-align: center;
             }
 
             .button:hover {

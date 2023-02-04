@@ -3,6 +3,7 @@ import { FC, useEffect } from 'react'
 import './navbar.scss'
 import { navScroll } from './animation/navScroll'
 import { Breakpoint } from 'react-socks';
+import { Link } from 'react-router-dom';
 
 
 

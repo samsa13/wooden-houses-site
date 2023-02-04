@@ -7,7 +7,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba($--black, 0.5);
+  background-color: rgba($--black, 0.7);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,17 +88,19 @@
 
       &.lastSlide {
         transform: translateX(-100%);
+        opacity: 0;
       }
 
       &.nextSlide {
         transform: translateX(100%);
+        opacity: 0;
       }
     }
 
     .close{
       position: absolute;
       top: 0;
-      right: .5vw;
+      right: .5rem;
       width: 3vw;
       max-width: 3rem;
       height: 3vw;

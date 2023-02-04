@@ -1,6 +1,6 @@
 {
-  "homepage": "https://samsa13.github.io/wooden-houses-site",
-  "name": "wood-construction-site",
+  "homepage": "https://дом76.рф/wood_construction",
+  "name": "wood_construction",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,12 +15,12 @@
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
     "@types/react-redux": "^7.1.24",
+    "@types/react-router-dom": "^5.3.3",
     "emailjs-com": "^3.2.0",
     "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.2",
-    "react-router": "^6.3.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "^5.0.1",
     "react-socks": "^2.2.0",

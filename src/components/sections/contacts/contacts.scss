@@ -4,7 +4,7 @@
 @media screen and (min-width: 1270px) {
     .contacts {
         position: relative;
-        background: url('../../../assets/background-imgs/rafters.jpg') rgba($--main-brown, 0.8);
+        background: url('https://res.cloudinary.com/echeperegina/image/upload/v1675529685/doma_derevyannye/back_picks/rafters_fc3yey.jpg') rgba($--main-brown, 0.8);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -138,6 +138,7 @@
             .form {
                 width: 60%;
                 min-width: 30rem;
+                height: fit-content;
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-start;
@@ -197,316 +198,10 @@
         .google-map {
             width: 100vw;
             height: 90vh;
-            top: 100vh;
             border: none;
         }
 
 
-
-        .logo {
-            width: 100%;
-            height: fit-content;
-            padding: 2vh;
-            display: flex;
-            justify-content: flex-start;
-            gap: 2vw;
-            align-items: center;
-            flex-direction: row;
-            color: $--light-brown;
-
-            p {
-                font-size: 1.5rem;
-            }
-
-            a {
-                color: $--light-brown;
-                text-decoration: none;
-                font-family: $--strong-font;
-                font-weight: bolder;
-            }
-
-            .company-name {
-                display: flex;
-                flex-direction: row;
-
-                h4 {
-                    font-size: 2rem;
-                }
-
-                svg {
-                    width: 5rem;
-                    height: 4rem;
-                    fill: $--light-brown;
-                    margin-left: 5rem;
-                    margin-right: 1rem;
-                }
-
-            }
-
-            .strong_font {
-                font-family: $--strong-font;
-                font-weight: bold;
-            }
-
-        }
-    }
-
-    .contacts::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba($--main-white, 0.5) url("../../../assets/gif/loading.gif") center / 10rem no-repeat;
-        opacity: 0;
-        visibility: hidden;
-        transition: 1s;
-        z-index: 1;
-    }
-
-    .contacts._sending::after {
-        opacity: 1;
-        visibility: visible;
-        z-index: 4;
-
-    }
-}
-
-//@media screen and (max-width: 768px) {}
-
-@media screen and (max-width: 1269px) {
-    .contacts {
-        position: relative;
-        background: url('../../../assets/background-imgs/rafters.jpg') rgba($--main-brown, 0.8);
-        background-position: left;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-blend-mode: darken;
-        width: 100vw;
-        height: fit-content;
-        background-attachment: fixed;
-
-        color: $--main-white;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 5vh;
-
-        h1 {
-            margin-top: 4vh;
-            position: relative;
-            text-align: center;
-            font-size: 3rem;
-        }
-
-        .contacts-text {
-
-            .bigger_size {
-                border-bottom: 2px solid $--main-white;
-                margin: 2vh 0;
-            }
-
-            p {
-                font-size: 2rem;
-                font-family: $--strong-font;
-                line-height: 6vh;
-
-                a {
-                    color: $--main-white;
-                    text-decoration: none;
-                    font-family: $--strong-font;
-                }
-            }
-
-
-            .phone::before {
-                content: "\f095";
-                font-family: FontAwesome !important;
-                padding-right: 1rem;
-            }
-
-            .mail::before {
-                content: "\f0e0";
-                font-family: FontAwesome !important;
-                padding-right: 1rem;
-            }
-
-            .vk::before {
-                content: "\f189";
-                font-family: FontAwesome !important;
-                padding-right: 1rem;
-            }
-
-            .address::before {
-                content: "\f041";
-                font-family: FontAwesome !important;
-                padding-right: 1rem;
-            }
-
-            .phone:hover,
-            .mail:hover,
-            .vk:hover,
-            .phone2:hover {
-                transition: .5s;
-                color: lighten($--light-brown, 20);
-            }
-        }
-
-        .survey-form {
-            width: 85vw;
-            max-width: 35rem;
-            height: fit-content;
-            background-color: rgba($--main-white, 0.7);
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-
-            .header {
-                width: 110%;
-                height: fit-content;
-                margin-top: 2rem;
-                background-color: $--main-white;
-                box-shadow: 0 1rem 1rem rgba($--main-brown, 0.5);
-                z-index: 2;
-                padding-left: 20%;
-
-                h5,
-                h6 {
-                    color: $--main-brown;
-                }
-
-                h5 {
-                    font-size: 2.5rem;
-                }
-
-                h6 {
-                    font-size: 2rem;
-                    font-family: $--strong-font;
-                }
-            }
-
-            .triangle {
-                margin-right: 98%;
-                border: 2rem solid transparent;
-                border-top: 2rem solid lighten($--light-brown, 10);
-                border-right: 2rem solid lighten($--light-brown, 10);
-            }
-
-            .form {
-                width: 80%;
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-start;
-                align-items: center;
-                gap: .1rem;
-
-                .input {
-                    width: 100%;
-                    height: 6rem;
-                    border: none;
-                    border-radius: 1.3rem;
-                    padding-left: 2.5rem;
-                    box-shadow: 6px 6px 6px rgba($--black, 0.2);
-                    padding-top: .5rem;
-                    color: $--main-grey;
-                    font: 700 1.8rem $--strong-font;
-                }
-
-                .input:focus {
-                    outline: 0;
-                    outline-offset: 0;
-                }
-
-                .input.reg::placeholder {
-                    color: lighten($--main-grey, 10);
-                    font: 700 1.7rem $--strong-font;
-                }
-
-                label {
-                    align-self: flex-start;
-                    color: $--main-brown;
-                    margin-left: 2rem;
-                    font: 500 1.8rem $--strong-font;
-                    padding-top: 1rem;
-                    ;
-                }
-
-                .submit_button {
-                    width: 80%;
-                    height: 6rem;
-                    border: none;
-                    border-radius: 3rem;
-                    box-shadow: 6px 6px 6px rgba($--black, 0.2);
-                    margin: 2rem 0;
-                    background-color: lighten($--light-brown, 10);
-                    color: $--main-white;
-                    font-size: 1.5rem;
-                }
-
-                .submit_button:hover {
-                    background-color: $--light-brown;
-                    cursor: pointer;
-                }
-            }
-        }
-
-        .google-map {
-            width: 100vw;
-            height: 20vh;
-            border: none;
-        }
-
-        .logo {
-            width: 100%;
-            height: fit-content;
-            display: flex;
-            justify-content: flex-start;
-            padding: 0 3vw 3vh 3vw;
-            align-items: center;
-            flex-direction: row;
-            flex-wrap: wrap;
-            gap: 3vw;
-            color: $--light-brown;
-
-            p {
-                font-size: 1rem;
-            }
-
-            a {
-                color: $--light-brown;
-                text-decoration: none;
-                font-family: $--strong-font;
-                font-weight: bolder;
-                margin-left: 1rem;
-            }
-
-            .company-name {
-                display: flex;
-                flex-direction: row;
-
-                h4 {
-                    font-size: 2rem;
-                }
-
-                svg {
-                    width: 3rem;
-                    height: 3rem;
-                    fill: $--light-brown;
-                    margin-left: 1rem;
-                    margin-right: 1rem;
-                }
-
-            }
-
-            .strong_font {
-                font-family: $--strong-font;
-                font-weight: bold;
-            }
-        }
         .contacts::after {
             content: "";
             position: absolute;
@@ -514,7 +209,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba($--main-white, 0.5) url("../../../assets/gif/loading.gif") center / 4rem no-repeat;
+            background: rgba($--main-white, 0.5) url("../../../assets/gif/loading.gif") center / 10rem no-repeat;
             opacity: 0;
             visibility: hidden;
             transition: 1s;
@@ -525,6 +220,217 @@
             opacity: 1;
             visibility: visible;
             z-index: 4;
+
         }
     }
 }
+
+    //@media screen and (max-width: 768px) {}
+
+    @media screen and (max-width: 1269px) {
+        .contacts {
+            position: relative;
+            background: url('../../../assets/background-imgs/rafters.jpg') rgba($--main-brown, 0.8);
+            background-position: left;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-blend-mode: darken;
+            width: 100vw;
+            height: fit-content;
+            background-attachment: fixed;
+
+            color: $--main-white;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 5vh;
+
+            h1 {
+                margin-top: 4vh;
+                position: relative;
+                text-align: center;
+                font-size: 3rem;
+            }
+
+            .contacts-text {
+
+                .bigger_size {
+                    border-bottom: 2px solid $--main-white;
+                    margin: 2vh 0;
+                }
+
+                p {
+                    font-size: 2rem;
+                    font-family: $--strong-font;
+                    line-height: 6vh;
+
+                    a {
+                        color: $--main-white;
+                        text-decoration: none;
+                        font-family: $--strong-font;
+                    }
+                }
+
+
+                .phone::before {
+                    content: "\f095";
+                    font-family: FontAwesome !important;
+                    padding-right: 1rem;
+                }
+
+                .mail::before {
+                    content: "\f0e0";
+                    font-family: FontAwesome !important;
+                    padding-right: 1rem;
+                }
+
+                .vk::before {
+                    content: "\f189";
+                    font-family: FontAwesome !important;
+                    padding-right: 1rem;
+                }
+
+                .address::before {
+                    content: "\f041";
+                    font-family: FontAwesome !important;
+                    padding-right: 1rem;
+                }
+
+                .phone:hover,
+                .mail:hover,
+                .vk:hover,
+                .phone2:hover {
+                    transition: .5s;
+                    color: lighten($--light-brown, 20);
+                }
+            }
+
+            .survey-form {
+                width: 85vw;
+                max-width: 35rem;
+                height: fit-content;
+                background-color: rgba($--main-white, 0.7);
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+
+                .header {
+                    width: 110%;
+                    height: fit-content;
+                    margin-top: 2rem;
+                    background-color: $--main-white;
+                    box-shadow: 0 1rem 1rem rgba($--main-brown, 0.5);
+                    z-index: 2;
+                    padding-left: 20%;
+
+                    h5,
+                    h6 {
+                        color: $--main-brown;
+                    }
+
+                    h5 {
+                        font-size: 2.5rem;
+                    }
+
+                    h6 {
+                        font-size: 2rem;
+                        font-family: $--strong-font;
+                    }
+                }
+
+                .triangle {
+                    margin-right: 98%;
+                    border: 2rem solid transparent;
+                    border-top: 2rem solid lighten($--light-brown, 10);
+                    border-right: 2rem solid lighten($--light-brown, 10);
+                }
+
+                .form {
+                    width: 80%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: .1rem;
+
+                    .input {
+                        width: 100%;
+                        height: 6rem;
+                        border: none;
+                        border-radius: 1.3rem;
+                        padding-left: 2.5rem;
+                        box-shadow: 6px 6px 6px rgba($--black, 0.2);
+                        padding-top: .5rem;
+                        color: $--main-grey;
+                        font: 700 1.8rem $--strong-font;
+                    }
+
+                    .input:focus {
+                        outline: 0;
+                        outline-offset: 0;
+                    }
+
+                    .input.reg::placeholder {
+                        color: lighten($--main-grey, 10);
+                        font: 700 1.7rem $--strong-font;
+                    }
+
+                    label {
+                        align-self: flex-start;
+                        color: $--main-brown;
+                        margin-left: 2rem;
+                        font: 500 1.8rem $--strong-font;
+                        padding-top: 1rem;
+                        ;
+                    }
+
+                    .submit_button {
+                        width: 80%;
+                        height: 6rem;
+                        border: none;
+                        border-radius: 3rem;
+                        box-shadow: 6px 6px 6px rgba($--black, 0.2);
+                        margin: 2rem 0;
+                        background-color: lighten($--light-brown, 10);
+                        color: $--main-white;
+                        font-size: 1.5rem;
+                    }
+
+                    .submit_button:hover {
+                        background-color: $--light-brown;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .google-map {
+                width: 100vw;
+                height: 20vh;
+                border: none;
+            }
+
+
+            .contacts::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba($--main-white, 0.5) url("../../../assets/gif/loading.gif") center / 4rem no-repeat;
+                opacity: 0;
+                visibility: hidden;
+                transition: 1s;
+                z-index: 1;
+            }
+
+            .contacts._sending::after {
+                opacity: 1;
+                visibility: visible;
+                z-index: 4;
+            }
+        }
+    }
